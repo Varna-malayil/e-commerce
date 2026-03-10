@@ -22,10 +22,6 @@ export const Components = () => {
                             label: 'Learn more',
                             onPress: () => setVisible(false),
                         },
-                        {
-                            label: 'view once',
-                            onPress: () => setVisible(false),
-                        }
                     ]}
                     icon={({ size }) => (
                         <Image
