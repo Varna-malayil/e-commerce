@@ -67,7 +67,26 @@ const Form = () => {
             {errors.email && (
               <Text style={styles.error}>{errors.email.message}</Text>
             )}
-
+            {/* phone */}
+            <Text style={styles.label}>Phone</Text>
+            <Controller
+              control={control}
+              name="phone"
+              rules={{ required: "phone is required", maxLength: 10 }}
+              render={({ field: { onChange, value } }) => (
+                <TextInput
+                  style={styles.input}
+                  placeholder='Enter email'
+                  placeholderTextColor="#bfadad"
+                  keyboardType='number-pad'
+                  value={value}
+                  onChangeText={onChange}
+                />
+              )}
+            />
+            {errors.email && (
+              <Text style={styles.error}>{errors.phone.message}</Text>
+            )}
             {/* Password */}
             <Text style={styles.label}>Password</Text>
             <Controller
