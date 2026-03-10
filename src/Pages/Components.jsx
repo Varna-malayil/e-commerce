@@ -56,7 +56,7 @@ export const Components = () => {
             </Card>
             <View >
                 <Button mode={"contained"} style={{ margin: 20 }} onPress={() => navigation.navigate('Form')}> Hook Form</Button>
-                <Chip icon="information" >chip</Chip>
+                {/* <Chip icon="information" >chip</Chip> */}
 
             </View>
         </ScrollView>
